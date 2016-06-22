@@ -14,7 +14,7 @@ Searchtools propose few functions to makes your search-engine faster.
 
 ##Function
 
-######searchTools(__keywords__:String, __attributes__ :array, __objects__:array, __caseSensitive__:boolean, __latinize__:boolean) : 
+######searchTools(**keywords**:String, **attributes**:array,**objects**:array, **caseSensitive**:boolean, **latinize**:boolean) : 
 
   Keywords : put the word you want to check here . You can put few words in the same string, they will be split in an array before the search.
 
@@ -34,7 +34,7 @@ Searchtools propose few functions to makes your search-engine faster.
             "child": {
               "name": "ID"
             }
-          },
+          }
  ]
 ```
 
