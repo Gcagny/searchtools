@@ -6,12 +6,9 @@ Using npm:
 $ npm install searchtools  
 ```
 ##Dependencies
-```
-  "dependencies":{
-    "lodash":"3.10.1",
-    "stringtools":"O.O.1"
-  }  
-```
+    "lodash"
+    "stringtools"
+
 ## SEARCHTOOLS
 Searchtools propose few functions to makes your search-engine faster.  
 
