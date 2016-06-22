@@ -1,0 +1,9 @@
+{
+  "main": "index.js",
+  "name": "searchtools",
+  "version": "0.0.1",
+  "dependencies":{
+    "lodash":"3.10.1",
+    "stringtools":"O.O.1"
+  }
+}
