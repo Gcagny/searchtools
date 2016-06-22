@@ -17,7 +17,7 @@ Searchtools propose few functions to makes your search-engine faster.
 
 ##Function
 
-######searchTools(keywords:String, attributes :array\*, objects:array\*\*, caseSensitive:boolean, latinize:boolean) : 
+######searchTools(__keywords__:String, __attributes__ :array, __objects__:array, __caseSensitive__:boolean, __latinize__:boolean) : 
 
   Keywords : put the word you want to check here . You can put few words in the same string, they will be split in an array before the search.
 
@@ -42,12 +42,11 @@ Searchtools propose few functions to makes your search-engine faster.
 ```
 
 
- Objects :  It's an array which list the objects you have to browse, in the database.
+ Objects :  It's an array which list the objects you have to browse, from the database for examples.
  
  The caseSensitive boolean while allow you to enabled or not the caseSensitive.
  The latinize boolean will allow you to check or not the accent and others specials characters.
 
-Return an associative arrays with [object]->[foreach[attribut->[indices of the keyword]]
 
 
   
