@@ -5,36 +5,40 @@ Using npm:
 ```bash
 $ npm install searchtools  
 ```
-
-Require : Lodash  
-Require : stringtools  
-
+##Dependencies
+```
+  "dependencies":{
+    "lodash":"3.10.1",
+    "stringtools":"O.O.1"
+  }  
+```
 ## SEARCHTOOLS
 Searchtools propose few functions to makes your search-engine faster.  
 
 ##Function
 
-###searchTools(keywords[String], attr[array*], objects[array**], caseSensitive[boolean], latinize[boolean]) : 
-* -> The array look like
+###searchTools(keywords:String, attributes :array-, objects:array--, caseSensitive:boolean, latinize:boolean) : 
+- -> The array looks like
 ```
  [
 
           {
-            "name": "Attribut1"
+            "name": "Title"
           },
           {
-            "name": "Attribut2"
+            "name": "Article"
           },
           {
-            "name": "Attribut3",
+            "name": "Edition",
             "child": {
-              "name": "subAttribut3"
+              "name": "ID"
             }
           },
  ]
 ```
+--
 
-** -> It's an array which list the objects you have to browse.
+ -> It's an array which list the objects you have to browse.
 The caseSensitive boolean while allow you to enabled or not the caseSensitive.
 The latinize boolean will allow you to check or not the accent and others specials characters.
 Keywords : put the word you want to check here . YOu can put few words in the same string, they will be split in an array before the search.
