@@ -17,8 +17,8 @@ Searchtools propose few functions to makes your search-engine faster.
 
 ##Function
 
-###searchTools(keywords:String, attributes :array-, objects:array--, caseSensitive:boolean, latinize:boolean) : 
-- -> The array looks like
+######searchTools(keywords:String, attributes :array\*, objects:array\*\*, caseSensitive:boolean, latinize:boolean) : 
+\* -> The array looks like
 ```
  [
 
@@ -36,9 +36,9 @@ Searchtools propose few functions to makes your search-engine faster.
           },
  ]
 ```
---
 
- -> It's an array which list the objects you have to browse.
+
+ \*\*-> It's an array which list the objects you have to browse.
 The caseSensitive boolean while allow you to enabled or not the caseSensitive.
 The latinize boolean will allow you to check or not the accent and others specials characters.
 Keywords : put the word you want to check here . YOu can put few words in the same string, they will be split in an array before the search.
