@@ -41,7 +41,7 @@ Searchtools propose few functions to makes your search-engine faster.
 
  **Objects** :  It's an array which list the objects you have to browse, from the database for examples.
  
- The **caseSensitive** boolean while allow you to enabled or not the caseSensitive.
+ The **caseSensitive** boolean while allow you to enabled or not the caseSensitive.  
  The **latinize boolean** will allow you to check or not the accent and others specials characters.
 
 
