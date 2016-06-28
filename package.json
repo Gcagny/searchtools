@@ -4,6 +4,6 @@
   "version": "0.0.1",
   "dependencies":{
     "lodash":"3.10.1",
-    "stringtools":"0.0.1"
+    "stringtools":"0.0.2"
   }
 }
