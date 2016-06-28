@@ -1,0 +1,88 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/gcagny/WorkSpace/searchtools',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/gcagny/.npm/searchtools/0.0.1/package.tgz not in flight; packing
+9 info lifecycle searchtools@0.0.1~prepublish: searchtools@0.0.1
+10 silly lifecycle searchtools@0.0.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/gcagny/.npm/searchtools/0.0.1/package.tgz',
+11 verbose tar pack   '/home/gcagny/WorkSpace/searchtools' ]
+12 verbose tarball /home/gcagny/.npm/searchtools/0.0.1/package.tgz
+13 verbose folder /home/gcagny/WorkSpace/searchtools
+14 verbose addLocalTarball adding from inside cache /home/gcagny/.npm/searchtools/0.0.1/package.tgz
+15 silly cache afterAdd searchtools@0.0.1
+16 verbose afterAdd /home/gcagny/.npm/searchtools/0.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /home/gcagny/.npm/searchtools/0.0.1/package/package.json written
+18 silly publish { main: 'index.js',
+18 silly publish   name: 'searchtools',
+18 silly publish   version: '0.0.1',
+18 silly publish   dependencies: { lodash: '3.10.1', stringtools: 'O.O.1' },
+18 silly publish   readme: '## Installation\n\nUsing npm:  \n\n```bash\n$ npm install searchtools  \n```\n##Dependencies\n    lodash\n    stringtools\n\n## SEARCHTOOLS\nSearchtools propose few functions to makes your search-engine faster.  \n\n##Function\n\n######searchTools(**keywords**:String, **attributes**:array,**objects**:array, **caseSensitive**:boolean, **latinize**:boolean) : \n\n  **Keywords** : put the word you want to check here . You can put few words in the same string, they will be split in an array before the search.\n\n  \n  **Attributes** : It\'s an array with the attributes of each objects you want to brows. The array looks like\n```\n [\n\n          {\n            "name": "Title"\n          },\n          {\n            "name": "Article"\n          },\n          {\n            "name": "Edition",\n            "child": {\n              "name": "ID"\n            }\n          }\n ]\n```\n\n\n **Objects** :  It\'s an array which list the objects you have to browse, from the database for examples.\n                the objects looks like:\n\n The **caseSensitive** boolean while allow you to enabled or not the caseSensitive.  \n The **latinize boolean** will allow you to check or not the accent and others specials characters.\n\n\n\n  \n  \n\n\n\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '4c85d37c158627124818890af5fd6868ab9263e5',
+18 silly publish   description: 'Using npm:',
+18 silly publish   _id: 'searchtools@0.0.1',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: 'dafffc0209168bd669d35c3d5c237b3419d1debf',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name searchtools
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/searchtools
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/gcagny/.npm/searchtools/0.0.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/searchtools
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 12:03:01
+29 verbose request using bearer token for auth
+30 verbose request id 245d3ea911a3e870
+31 http request PUT https://registry.npmjs.org/searchtools
+32 http 403 https://registry.npmjs.org/searchtools
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Tue, 28 Jun 2016 10:03:03 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-lhr6321-LHR',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1467108181.969954,VS0,VE1272',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 verbose request invalidating /home/gcagny/.npm/registry.npmjs.org/searchtools on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : searchtools
+36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/share/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/share/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/share/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid searchtools
+39 verbose cwd /home/gcagny/WorkSpace/searchtools
+40 error Linux 4.4.0-24-generic
+41 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish"
+42 error node v4.2.6
+43 error npm  v3.5.2
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.1." : searchtools
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
